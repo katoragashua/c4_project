@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   /* outline: 1px solid green; */
-  /* overflow-x: hidden; */
 }
 
 :root {
@@ -94,7 +93,7 @@ li {
 .hero {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   position: relative;
 }
 
@@ -105,6 +104,9 @@ li {
   padding-top: 3rem;
 }
 
+.url-shortener-div {
+  background: url("../assets/images/bg-shorten-mobile.svg");
+}
 .stats {
   background: var(--grayish-violet);
 }
@@ -206,16 +208,45 @@ footer {
   color: var(--paragraph);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 610px) {
   .header .container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding: 1rem 0;
+    position: relative;
   }
 
   .navigation {
     display: none;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--dark-violet);
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    z-index: 10;
   }
+
+  .navigation a {
+    color: white;
+  }
+
+  .nav, .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .sign-up {
+    align-self: stretch;
+    padding: .8rem 3rem;
+  }
+
 
   .hero {
     position: relative;
@@ -234,13 +265,17 @@ footer {
   }
 
   .url-shortener-div {
-    background: url("../assets/images/bg-shorten-mobile.svg");
+    background: url("./assets/images/bg-shorten-mobile.svg");
     background-color: var(--dark-violet);
+    background-repeat: no-repeat;
+    background-position: top right;
     padding: 1.5em;
     border-radius: 10px;
     position: absolute;
     bottom: -9%;
     width: 100%;
+    min-width: 100%;
+    z-index: 10;
   }
 
   .url-shortener-div form {
@@ -307,6 +342,8 @@ footer {
   .boost {
     background: url("./assets/images/bg-boost-mobile.svg");
     background-color: var(--dark-violet);
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 
   /* Footer */
@@ -415,7 +452,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    max-width: 45%;
+    max-width: 50%;
     padding-top: 3rem;
   }
 
@@ -534,6 +571,8 @@ footer {
   .boost {
     background: url("./assets/images/bg-boost-desktop.svg");
     background-color: var(--dark-violet);
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 
   /* Footer */

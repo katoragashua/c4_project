@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import urlBgDesktop from "../assets/images/bg-shorten-desktop.svg";
 import heroIllustration from "../assets/images/illustration-working.svg";
-
+import urlBgMobile from "../assets/images/bg-shorten-mobile.svg";
 const Hero = () => {
   return (
     <section className="hero container">
@@ -18,6 +18,7 @@ const Hero = () => {
       </div>
 
       <div className="url-shortener-div">
+        
         <form action="">
           <input
             type="text"

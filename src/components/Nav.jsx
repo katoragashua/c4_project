@@ -18,6 +18,7 @@ const Nav = () => {
           <NavLink>Resources</NavLink>
         </ul>
       </div>
+      <hr />
       <div className="auth">
         <ul>
           <NavLink>Login</NavLink>
