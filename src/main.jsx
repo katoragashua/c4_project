@@ -12,6 +12,7 @@ import Home from "./pages/Home.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import RootLayout from "./layouts/RootLayout.jsx";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={"/"} element={<RootLayout />}>
