@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
-import hamburger from "../assets/images/hamburger.svg";
 
-const Nav = () => {
+const Nav = ({dropDown}) => {
   return (
-    <nav className="navigation">
+    <nav className={`navigation ${dropDown && "drop-down"}`} >
       
       <div className="nav">
         <ul>
